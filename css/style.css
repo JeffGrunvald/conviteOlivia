@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-image: url(../image/image-11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clear{
+    clear: both;
+}
+
+.sectionOne{
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    position: fixed;
+    background-color: rosybrown;    
+}
+
+.sectionOne .container{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.sectionOne .foto{
+    text-align: center;
+}
+
+.sectionOne .foto img{
+    width: 90%;
+    border-radius: 50%;
+    border: 4px solid whitesmoke;
+}
+
+.sectionOne .menu{
+    padding: 10px 4%;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+}
+
+.sectionOne .menu .alignImage{
+    padding: 10px 2%;
+}
+
+.sectionOne .menu .alignImage img{
+    width: 100%;
+    height: 80%;
+    max-width: 48px;
+    max-height: 48px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.sectionTwo{
+    height: 100%;
+    left: 34%;
+    padding: 10px 2%;
+    position: absolute;
+}
+
+.sectionTwo .container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+.sectionTwo .boxOne{
+    letter-spacing: 1px;
+}
+
+.sectionTwo .boxTwo{
+    margin-right: 2%;
+    padding: 24px 2%;
+    float: right;
+}
+
+.sectionTwo .boxTwo input{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 4px;
+    border: 1px solid dimgray;
+    background-color: silver;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.sectionTwo .boxTwo input:hover{
+    background-color: springgreen;
+}
+
+.footerOne .container{
+    right: 16px;
+    bottom: 16px;
+    float: right;
+    position: absolute;
+}
+
+/**Mobile**/
+@media (max-width: 768px){
+    .sectionOne{
+        width: 40%;  
+    }
+
+    .sectionTwo{
+        left: 45%;
+        font-size: 12px;
+    }
+
+    .sectionTwo .boxTwo input{
+        font-size: 12px;
+    }
+
+    .footerOne .container{
+        font-size: 10px;
+    }
+}
