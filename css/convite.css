@@ -1,0 +1,49 @@
+.sectionConvite {
+  height: 100%;
+  left: 34%;
+  padding: 10px 2%;
+  position: absolute;
+}
+
+.sectionConvite .container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.sectionConvite .container .boxOne {
+  letter-spacing: 1px;
+}
+
+.sectionConvite .container .boxTwo {
+  margin-right: 2%;
+  padding: 24px 2%;
+  float: right;
+}
+
+.sectionConvite .container .boxTwo input {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 4px;
+  border: 1px solid dimgray;
+  background-color: silver;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.sectionConvite .container .boxTwo input:hover {
+  background-color: springgreen;
+}
+
+/**Mobile**/
+@media (max-width: 768px) {
+  .sectionConvite {
+    left: 45%;
+    font-size: 12px;
+  }
+  .sectionConvite .boxTwo input {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=convite.css.map */

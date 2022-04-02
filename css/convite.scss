@@ -1,0 +1,48 @@
+.sectionConvite{
+    height: 100%;
+    left: 34%;
+    padding: 10px 2%;
+    position: absolute;
+
+    .container{
+        position: relative;
+        top: 50%;
+        transform: translateY(-60%);
+
+        .boxOne{
+            letter-spacing: 1px;
+        }
+
+        .boxTwo{
+            margin-right: 2%;
+            padding: 24px 2%;
+            float: right;
+
+            input{
+                font-size: 14px;
+                font-weight: bold;
+                padding: 4px 4px;
+                border: 1px solid dimgray;
+                background-color: silver;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+            }
+
+            input:hover{
+                background-color: springgreen;
+            }
+        }
+    }
+}
+
+/**Mobile**/
+@media (max-width: 768px){
+    .sectionConvite{
+        left: 45%;
+        font-size: 12px;
+
+        .boxTwo input{
+            font-size: 12px;
+        }
+    }
+}
