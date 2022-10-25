@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto',sans-serif;
 }
 
@@ -11,7 +10,7 @@ html, body {
 }
 
 body {
-  background-image: url(../image/image-11.png);
+  background-image: url(../image/fundo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -20,46 +19,40 @@ body {
   clear: both;
 }
 
-.sectionGeral {
+#sec-lateral {
   width: 30%;
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: fixed;
   background-color: rosybrown;
-}
-
-.sectionGeral .container {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.sectionGeral .container .foto {
   text-align: center;
 }
-
-.sectionGeral .container .foto img {
-  width: 90%;
-  border-radius: 50%;
-  border: 4px solid whitesmoke;
+  
+#sec-lateral .container {
+  top:50%;
+  position: absolute;
+  transform:translateY(-50%);
 }
 
-.sectionGeral .container .menu {
+#sec-lateral .foto img {
+  width: 70%;
+  border: 4px solid whitesmoke;
+  border-radius: 50%;
+}
+
+#sec-lateral .menu {
   padding: 10px 4%;
   text-align: center;
   color: whitesmoke;
-  letter-spacing: 1.5px;
-  word-spacing: 1.5px;
+  letter-spacing: 2.4px;
+  word-spacing: 2.4px;
 }
 
-.sectionGeral .container .menu .alignImage {
+#sec-lateral .alignImage {
   padding: 10px 2%;
 }
 
-.sectionGeral .container .menu .alignImage img {
+#sec-lateral .alignImage img {
   width: 100%;
   height: 80%;
   max-width: 48px;
@@ -68,69 +61,69 @@ body {
   opacity: 0.6;
 }
 
-.footerGeral .container {
-  right: 16px;
-  bottom: 16px;
-  float: right;
-  position: absolute;
-}
-
-/**Mobile**/
-@media (max-width: 768px) {
-  .sectionGeral {
-    width: 40%;
-  }
-  .footerGeral .container {
-    font-size: 10px;
-  }
-}
-
-.sectionConvite {
+#sec-convite {
   height: 100%;
   left: 34%;
   padding: 10px 2%;
   position: absolute;
+  letter-spacing: 2.4px;
+  word-spacing: 2.4px;
 }
 
-.sectionConvite .container {
-  position: relative;
+#sec-convite .container {
   top: 50%;
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
+  position: relative;
+  transform: translateY(-60%);
 }
 
-.sectionConvite .container .boxOne {
-  letter-spacing: 1px;
-}
-
-.sectionConvite .container .boxTwo {
+#sec-convite .box-two {
   margin-right: 2%;
   padding: 24px 2%;
   float: right;
 }
-
-.sectionConvite .container .boxTwo input {
+   
+#sec-convite .box-two input {
+  padding: 4px 4px;
   font-size: 14px;
   font-weight: bold;
-  padding: 4px 4px;
   border: 1px solid dimgray;
   background-color: silver;
   letter-spacing: 1.5px;
   cursor: pointer;
 }
 
-.sectionConvite .container .boxTwo input:hover {
+#sec-convite .box-two input:hover {
   background-color: springgreen;
 }
 
+#footer .container {
+  right: 16px;
+  bottom: 16px;
+  float: right;
+  position: absolute;
+  font-size: 1.2rem;
+}
+
 /**Mobile**/
-@media (max-width: 768px) {
-  .sectionConvite {
+@media (max-width: 768px){
+  #sec-lateral {
+    width: 40%;  
+  }
+
+  #sec-lateral .foto img {
+    width: 80%;
+  }
+
+  #sec-convite {
     left: 45%;
     font-size: 12px;
   }
-  .sectionConvite .boxTwo input {
+   
+  #sec-convite .box-two input {
     font-size: 12px;
   }
+
+  #footer .container {
+    font-size: .8rem;
+  }
 }
-/*# sourceMappingURL=bundle.css.map */

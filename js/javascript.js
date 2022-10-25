@@ -1,20 +1,22 @@
-var aceito = true
-var outraChance = true
+let aceito = true
+let outraChance = true
 
-var buttonOne = document.querySelector('#buttonOne')
+const buttonOne = document.querySelector('#button-one')
 
 buttonOne.onclick = function() {
     
     if(aceito == true || outraChance == true) {
-        alert('Que felicidade! Estamos muito felizes com sua resposta!')
-        var padrinhos = document.querySelector('#padrinhos')
+        alert(`Que felicidade! Estamos muito felizes com sua resposta!`)
+        let padrinhos = document.querySelector('#padrinhos')
         padrinhos.innerHTML = `Todos os direitos reservados, <br> mas agora compartilhados com os padrinhos!`
         padrinhos.style.backgroundColor = 'rosybrown'
+        let funcao = document.querySelector('#function')
+        funcao.innerHTML = `Qual sua função? Orar pedindo luz e proteção, guiar pelo bom caminho, ser presente e amigo para todas as horas, brincar, mimar e amar!`
 
-        setTimeout(() => { padrinhos
-            alert('Bem vindos ao grupo padrinhos da Olívia')
-            window.open('https://chat.whatsapp.com/GTRgKlsxVcvEpoHW77nab8', '_blank')
-        }, 2000)
+        setTimeout(() => { padrinhos            
+            alert(`Bem vindos ao grupo padrinhos da Olívia!`)
+            window.open(`https://chat.whatsapp.com/GTRgKlsxVcvEpoHW77nab8`, 'popup')
+        }, 7000)
         aceito = false
         outraChance = false
     } else {
@@ -23,11 +25,12 @@ buttonOne.onclick = function() {
     }
 }
 
-var buttonTwo = document.querySelector('#buttonTwo')
+const buttonTwo = document.querySelector('#button-two')
 
 buttonTwo.onclick = function() {
+
     if(aceito == true) {
-        alert('Não aceitamos um não como resposta! haha')
+        alert(`Não aceitamos um não como resposta! haha`)
         aceito = false
     } else {
         aceito = false
