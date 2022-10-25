@@ -9,7 +9,6 @@ buttonOne.onclick = function() {
         alert(`Que felicidade! Estamos muito felizes com sua resposta!`)
         let padrinhos = document.querySelector('#padrinhos')
         padrinhos.innerHTML = `Todos os direitos reservados, <br> mas agora compartilhados com os padrinhos!`
-        padrinhos.style.backgroundColor = 'rosybrown'
         let funcao = document.querySelector('#function')
         funcao.innerHTML = `Qual sua função? Orar pedindo luz e proteção, guiar pelo bom caminho, ser presente e amigo para todas as horas, brincar, mimar e amar!`
 

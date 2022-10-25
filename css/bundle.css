@@ -46,6 +46,7 @@ body {
   color: whitesmoke;
   letter-spacing: 2.4px;
   word-spacing: 2.4px;
+  font-size: 1rem;
 }
 
 #sec-lateral .alignImage {
@@ -76,6 +77,10 @@ body {
   transform: translateY(-60%);
 }
 
+#sec-convite .box-one {
+  font-size: 1rem;
+}
+
 #sec-convite .box-two {
   margin-right: 2%;
   padding: 24px 2%;
@@ -101,7 +106,7 @@ body {
   bottom: 16px;
   float: right;
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /**Mobile**/
@@ -118,12 +123,16 @@ body {
     left: 45%;
     font-size: 12px;
   }
+
+  #sec-convite .box-one {
+    font-size: .8rem;
+  }
    
   #sec-convite .box-two input {
     font-size: 12px;
   }
 
   #footer .container {
-    font-size: .8rem;
+    font-size: .7rem;
   }
 }
